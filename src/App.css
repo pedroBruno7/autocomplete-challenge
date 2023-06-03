@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap");
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+.app {
+  padding-top: 16%;
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("./assets/travel.jpg");
+}
+
+.app__title {
+  color: #424242;
+  margin-bottom: 27px;
+  font-size: 39px;
+}

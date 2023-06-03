@@ -1,0 +1,57 @@
+.searchBar__autocompleteBar {
+  display: none;
+}
+
+.searchBar__input:focus + .searchBar__autocompleteBar {
+  display: flex;
+}
+
+.searchBar__autocompleteBar:hover {
+  display: flex;
+}
+
+.searchBar__autocompleteBar:focus {
+  display: flex;
+}
+
+.searchBar__input {
+  height: 45px;
+  width: 465px;
+  outline: 0;
+  font-size: 17px;
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #515151;
+}
+
+.searchBar__autocompleteBar {
+  max-height: 200px;
+  overflow: auto;
+  width: 300px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 66px;
+  flex-direction: column;
+  row-gap: 8px;
+  border-radius: 3px;
+  background-color: white;
+  align-items: center;
+}
+
+.searchBar__searchResult {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+}
+
+.searchBar__searchResult > * {
+  text-transform: capitalize;
+}
+
+.searchBar {
+  position: relative;
+  display: inline-block;
+}
