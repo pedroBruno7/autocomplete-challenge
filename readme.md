@@ -9,4 +9,6 @@ The code uses an external API, needs internet connection to work. If for some re
 
 # Requirements
 
-Vite requires Node.js version 14.18+, 16+
+- Node.js - Vite requires Node.js version 14.18+, 16+
+- NPM
+

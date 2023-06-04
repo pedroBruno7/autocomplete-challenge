@@ -23,8 +23,8 @@ export default function App() {
           await fetch("https://restcountries.com/v3.1/all?fields=name,maps")
         ).json()) as AutoCompleteItem[];
 
-        const foundCountries = countries.filter((ele) => {
-          return ele.name.common.toLowerCase().includes(searchQuery);
+        const foundCountries = countries.filter((country) => {
+          return country.name.common.toLowerCase().includes(searchQuery);
         });
 
         setSearch({

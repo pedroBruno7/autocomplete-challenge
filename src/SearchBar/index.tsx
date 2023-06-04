@@ -7,19 +7,19 @@ export const SearchBar: FC<SearchBarProps> = ({
   onChange,
   showAutocompleteBar,
   autocompleteResults,
-  searchQuery
+  searchQuery,
 }) => {
   return (
     <div className={styles.searchBar}>
       <input onChange={onChange} className={styles.searchBar__input} />
       {showAutocompleteBar && (
         <div tabIndex={1} className={styles.searchBar__autocompleteBar}>
-          {autocompleteResults.map((ele) => {
-            const countryName = ele.name.common.toLowerCase();
+          {autocompleteResults.map((autocompleteItem) => {
+            const countryName = autocompleteItem.name.common.toLowerCase();
 
             return (
               <a
-                href={ele.maps.googleMaps}
+                href={autocompleteItem.maps.googleMaps}
                 target="_blank"
                 rel="noreferrer"
                 className={styles.searchBar__searchResult}

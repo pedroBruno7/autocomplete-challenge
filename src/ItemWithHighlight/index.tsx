@@ -4,22 +4,17 @@ import { ItemWithHighlightProps } from "./types";
 
 export const ItemWithHighlight: FC<ItemWithHighlightProps> = ({
   highlightedText,
-  fullText
+  fullText,
 }) => {
-  const highligthedPart = (
-    <span className={styles.searchBar__highlightedText}>{highlightedText}</span>
-  );
-
-  const splittedName = fullText.split(highlightedText.toLowerCase());
+  const splitName = fullText.split(highlightedText);
+  const leftPart = splitName[0];
+  const rightPart = splitName[1];
 
   return (
     <span>
-      {/* Left part */}
-      {splittedName[0]}
-      {/* searched term */}
-      {highligthedPart}
-      {/* right part */}
-      {splittedName[1]}
+      {leftPart}
+      <span className={styles.highlightedText}>{highlightedText}</span>
+      {rightPart}
     </span>
   );
 };
