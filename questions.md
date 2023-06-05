@@ -119,5 +119,4 @@ We can style components in multiple ways. Some examples: styled components, css 
 
 **11. How to render an HTML string coming from the server**
 
-If it comes from a HTTP request on the client, we can render that with dangerouslySetInnerHTML for example
-If it's SSR we have renderToString and other methods
+If it comes from a HTTP request on the client, we can render that with dangerouslySetInnerHTML for example. If it's SSR we have renderToString and other methods
